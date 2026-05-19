@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.env
+venv/
+.venv/
+models/*.pkl
+data/segmentation_results.csv
+assets/elbow_silhouette_plot.png
+assets/davies_bouldin_plot.png
+.streamlit/
+*.log
