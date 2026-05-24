@@ -38,6 +38,19 @@ python -m streamlit run app.py
 If `streamlit` is not recognized, use the `python -m streamlit run app.py` form instead of calling `streamlit` directly.
 
 
+## App Preview
+
+The screenshots below show the main dashboard flow, from the landing summary to the deeper analytics and customer segment views.
+
+| Landing view | KPI overview | Visual analytics |
+| --- | --- | --- |
+| ![Customer Segmentation dashboard landing view](App_Previews/Screenshot%20(221).png) | ![Customer Segmentation KPI overview](App_Previews/Screenshot%20(224).png) | ![Customer Segmentation visual analytics view](App_Previews/Screenshot%20(222).png) |
+
+| High value customer segment | Data explorer and export | Platform info |
+| --- | --- | --- |
+| ![High value customer segment insights](App_Previews/Screenshot%20(226).png) | ![Data explorer and export table](App_Previews/Screenshot%20(223).png) | ![Platform information and technical stack](App_Previews/Screenshot%20(225).png) |
+
+
 ## Features
 
 * Default analysis on the bundled Online Retail dataset

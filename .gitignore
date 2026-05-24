@@ -2,6 +2,7 @@ __pycache__/
 *.pyc
 .env
 venv/
+App_Previews/
 .venv/
 models/*.pkl
 data/segmentation_results.csv
