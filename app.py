@@ -8,6 +8,7 @@ from pathlib import Path
 
 # Add src to path
 sys.path.insert(0, str(Path(__file__).parent / 'src'))
+BASE_DIR = Path(__file__).resolve().parent
 
 try:
     from data_loader import load_customers
@@ -296,7 +297,7 @@ st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
 
 @st.cache_data(show_spinner=False)
 def load_default_dataset():
-    return load_customers('data/OnlineRetail.csv')
+    return load_customers(str(BASE_DIR / 'data' / 'OnlineRetail.csv'))
 
 
 @st.cache_data(show_spinner=False)
@@ -321,8 +322,8 @@ def load_uploaded_dataset(file_bytes, file_name):
 
 @st.cache_resource(show_spinner=False)
 def load_trained_artifacts():
-    scaler = joblib.load('models/scaler.pkl')
-    model = load_model('models/kmeans_model.pkl')
+    scaler = joblib.load(BASE_DIR / 'models' / 'scaler.pkl')
+    model = load_model(str(BASE_DIR / 'models' / 'kmeans_model.pkl'))
     if model is None:
         raise FileNotFoundError("Model failed to load")
     return model, scaler
@@ -360,7 +361,7 @@ def load_data_and_model():
         
         if customer_ids.empty or X_scaled.shape[0] == 0:
             st.error("No valid customer data found after processing.")
-            return None, None, None, None, False
+            return None, None, None, None, None, None, False
         
         labels = predict_clusters(model, X_scaled)
         original_rfm_values = scaler.inverse_transform(X_scaled)

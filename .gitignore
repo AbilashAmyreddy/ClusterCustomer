@@ -4,6 +4,8 @@ __pycache__/
 venv/
 .venv/
 models/*.pkl
+!models/kmeans_model.pkl
+!models/scaler.pkl
 data/segmentation_results.csv
 assets/elbow_silhouette_plot.png
 assets/davies_bouldin_plot.png
