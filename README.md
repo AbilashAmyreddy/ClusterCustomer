@@ -2,6 +2,14 @@
 
 Customer segmentation dashboard built with Python and Streamlit. The app cleans transaction data, builds RFM features, loads a pre-trained K-Means model, and turns the results into interactive customer segments with business recommendations.
 
+## Live Demo
+
+The app is deployed on Streamlit Community Cloud and can be accessed here:
+
+https://clustercustomer.streamlit.app
+
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://clustercustomer.streamlit.app)
+
 ## What It Does
 
 The dashboard analyzes the bundled Online Retail dataset or a custom CSV upload and surfaces:
@@ -35,21 +43,21 @@ python train_model.py
 python -m streamlit run app.py
 ```
 
-If `streamlit` is not recognized, use the `python -m streamlit run app.py` form instead of calling `streamlit` directly.
+If you prefer the hosted version, open the live demo at https://clustercustomer.streamlit.app.
 
+If `streamlit` is not recognized, use the `python -m streamlit run app.py` form instead of calling `streamlit` directly.
 
 ## App Preview
 
 The screenshots below show the main dashboard flow, from the landing summary to the deeper analytics and customer segment views.
 
-| Landing view | KPI overview | Visual analytics |
-| --- | --- | --- |
-| ![Customer Segmentation dashboard landing view](App_Previews/Screenshot%20(221).png) | ![Customer Segmentation KPI overview](App_Previews/Screenshot%20(224).png) | ![Customer Segmentation visual analytics view](App_Previews/Screenshot%20(222).png) |
+| Landing view                                                                           | KPI overview                                                                 | Visual analytics                                                                      |
+| -------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| ![Customer Segmentation dashboard landing view](<App_Previews/Screenshot%20(221).png>) | ![Customer Segmentation KPI overview](<App_Previews/Screenshot%20(224).png>) | ![Customer Segmentation visual analytics view](<App_Previews/Screenshot%20(222).png>) |
 
-| High value customer segment | Data explorer and export | Platform info |
-| --- | --- | --- |
-| ![High value customer segment insights](App_Previews/Screenshot%20(226).png) | ![Data explorer and export table](App_Previews/Screenshot%20(223).png) | ![Platform information and technical stack](App_Previews/Screenshot%20(225).png) |
-
+| High value customer segment                                                    | Data explorer and export                                                 | Platform info                                                                      |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------ | ---------------------------------------------------------------------------------- |
+| ![High value customer segment insights](<App_Previews/Screenshot%20(226).png>) | ![Data explorer and export table](<App_Previews/Screenshot%20(223).png>) | ![Platform information and technical stack](<App_Previews/Screenshot%20(225).png>) |
 
 ## Features
 
@@ -137,6 +145,3 @@ The bundled dataset is the classic Online Retail transaction dataset, which incl
 ## Credit
 
 Built by Abilash Amyreddy.
-
- 
-
